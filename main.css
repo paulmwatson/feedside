@@ -49,9 +49,14 @@ ol
   padding: 1em 1em 0 1em;
 }
 
+#feed_title a
+{
+  color: #fff;
+}
+
 #feed_description
 {
-  border-bottom: solid 5px #ccc;
+  border-bottom: solid 2px #ccc;
   margin: 0;
   padding: 0 1em 1em 1em;
 }

@@ -22,7 +22,8 @@
         feed.load(function(result) {
           if (!result.error)
           {
-            $('#feed_title').text(result.feed.title);
+            $('#feed_title a').text(result.feed.title);
+            $('#feed_title a').attr('href', result.feed.link);
             $('#feed_description').text(result.feed.description);
             var entry_list = $('#entry_list');
             entry_list.empty();
@@ -131,8 +132,8 @@
   </head>
   <body>
     <ol id="subscription_list"></ol>
-    <h1 id="feed_title">Hello</h1>
-    <p id="feed_description">World</p>
+    <h1 id="feed_title"><a></a></h1>
+    <p id="feed_description"></p>
     <ol id="entry_list"></ol>
   </body>
 </html>
